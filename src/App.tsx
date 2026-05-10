@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
 import Header from './components/layout/Header';
 import HomePage from './pages/HomePage';
@@ -11,7 +11,7 @@ import CommunityPage from './pages/CommunityPage';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <AuthProvider>
         <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
           <Header />
@@ -26,7 +26,7 @@ function App() {
           </Routes>
         </div>
       </AuthProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
