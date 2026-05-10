@@ -8,6 +8,7 @@ import RegisterPage from './pages/RegisterPage';
 import LearnPage from './pages/LearnPage';
 import ProfilePage from './pages/ProfilePage';
 import CommunityPage from './pages/CommunityPage';
+import VideoLibraryPage from './pages/VideoLibraryPage';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/learn/:language/:module" element={<LearnPage />} />
             <Route path="/profile" element={<ProfilePage />} />
             <Route path="/community" element={<CommunityPage />} />
+            <Route path="/videos" element={<VideoLibraryPage />} />
           </Routes>
         </div>
       </AuthProvider>

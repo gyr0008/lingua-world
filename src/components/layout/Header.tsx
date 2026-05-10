@@ -3,7 +3,7 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { 
   Home, BookOpen, Users, Trophy, User, LogOut, 
-  Menu, X, Languages, Sparkles, ChevronDown
+  Menu, X, Languages, Sparkles, ChevronDown, Video
 } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
 
@@ -17,6 +17,7 @@ export default function Header() {
   const navLinks = [
     { to: '/', icon: Home, label: '首页' },
     { to: '/learn/en', icon: BookOpen, label: '学习' },
+    { to: '/videos', icon: Video, label: '视频库' },
     { to: '/community', icon: Users, label: '社区' },
     { to: '/profile', icon: Trophy, label: '成就' },
   ];

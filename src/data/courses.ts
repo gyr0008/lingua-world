@@ -877,3 +877,158 @@ export function getCourseById(courseId: string) {
   const all = getAllCourses();
   return all.find(c => c.id === courseId);
 }
+
+export const videoResources: { id: string; authorId: string; authorName: string; authorAvatar: string; language: 'en' | 'ja' | 'ko'; title: string; description: string; videoUrl: string; thumbnailUrl: string; stars: number; views: number; duration: string; createdAt: string; tags: string[]; }[] = [
+  {
+    id: 'vid-en-1',
+    authorId: 'user-1',
+    authorName: '英语学习达人',
+    authorAvatar: '👨‍🏫',
+    language: 'en',
+    title: '从零开始学英语 - 零基础入门教程',
+    description: '专为零基础学员设计的英语入门课程，从字母发音开始，循序渐进学习英语基础。',
+    videoUrl: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=640&h=360&fit=crop',
+    stars: 1280,
+    views: 56000,
+    duration: '45:30',
+    createdAt: '2026-05-05',
+    tags: ['英语', '入门', '零基础']
+  },
+  {
+    id: 'vid-en-2',
+    authorId: 'user-2',
+    authorName: '商务英语专家',
+    authorAvatar: '💼',
+    language: 'en',
+    title: '商务英语会话技巧 - 职场必备',
+    description: '学习职场英语沟通技巧，提升商务英语水平，轻松应对国际商务场合。',
+    videoUrl: 'https://www.youtube.com/watch?v=kfVsfOSbJY0',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=640&h=360&fit=crop',
+    stars: 892,
+    views: 32000,
+    duration: '32:15',
+    createdAt: '2026-05-03',
+    tags: ['英语', '商务', '职场']
+  },
+  {
+    id: 'vid-en-3',
+    authorId: 'user-3',
+    authorName: '口语练习家',
+    authorAvatar: '🎤',
+    language: 'en',
+    title: '英语口语发音纠正 - 美式英语',
+    description: '详细讲解美式英语发音技巧，纠正常见发音错误，让你的口语更地道。',
+    videoUrl: 'https://www.youtube.com/watch?v=Zk7dDekYej0',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=640&h=360&fit=crop',
+    stars: 1560,
+    views: 89000,
+    duration: '52:45',
+    createdAt: '2026-05-01',
+    tags: ['英语', '口语', '发音']
+  },
+  {
+    id: 'vid-ja-1',
+    authorId: 'user-4',
+    authorName: '日语老师小明',
+    authorAvatar: '🇯🇵',
+    language: 'ja',
+    title: '五十音图快速记忆法',
+    description: '高效记忆五十音图的方法，配合练习帮助你快速掌握日语发音基础。',
+    videoUrl: 'https://www.youtube.com/watch?v=8k9W85eH9fI',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=640&h=360&fit=crop',
+    stars: 2340,
+    views: 120000,
+    duration: '28:30',
+    createdAt: '2026-04-28',
+    tags: ['日语', '五十音', '入门']
+  },
+  {
+    id: 'vid-ja-2',
+    authorId: 'user-5',
+    authorName: '动漫日语教室',
+    authorAvatar: '🎬',
+    language: 'ja',
+    title: '看动漫学日语 - 名侦探柯南台词解析',
+    description: '通过热门动漫学习日语，解析经典台词，提升听力和词汇量。',
+    videoUrl: 'https://www.youtube.com/watch?v=VgXa0fG0X3M',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=640&h=360&fit=crop',
+    stars: 1890,
+    views: 95000,
+    duration: '40:00',
+    createdAt: '2026-04-25',
+    tags: ['日语', '动漫', '听力']
+  },
+  {
+    id: 'vid-ja-3',
+    authorId: 'user-6',
+    authorName: '日本文化研究所',
+    authorAvatar: '🏯',
+    language: 'ja',
+    title: '日语敬语详解 - 社交礼仪必备',
+    description: '深入讲解日语敬语体系，帮助你正确使用尊敬语和自谦语。',
+    videoUrl: 'https://www.youtube.com/watch?v=Rbs9A4V6a8Y',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1544551763-d76694265947?w=640&h=360&fit=crop',
+    stars: 1120,
+    views: 45000,
+    duration: '55:20',
+    createdAt: '2026-04-20',
+    tags: ['日语', '语法', '敬语']
+  },
+  {
+    id: 'vid-ko-1',
+    authorId: 'user-7',
+    authorName: '韩语入门导师',
+    authorAvatar: '🇰🇷',
+    language: 'ko',
+    title: '韩文字母快速入门 - 2小时学会读写',
+    description: '高效学习韩文字母的方法，2小时掌握韩文读写能力。',
+    videoUrl: 'https://www.youtube.com/watch?v=zIY2eX2aX7g',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=640&h=360&fit=crop',
+    stars: 3120,
+    views: 156000,
+    duration: '1:58:00',
+    createdAt: '2026-04-18',
+    tags: ['韩语', '韩文字母', '入门']
+  },
+  {
+    id: 'vid-ko-2',
+    authorId: 'user-8',
+    authorName: 'K-pop韩语教室',
+    authorAvatar: '🎵',
+    language: 'ko',
+    title: '跟着K-pop学韩语 - BTS歌词解析',
+    description: '通过热门K-pop歌曲学习韩语，边听歌边学韩语，轻松有趣。',
+    videoUrl: 'https://www.youtube.com/watch?v=XsX3ATc3FbA',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=640&h=360&fit=crop',
+    stars: 2780,
+    views: 234000,
+    duration: '35:45',
+    createdAt: '2026-04-15',
+    tags: ['韩语', 'K-pop', '歌词']
+  },
+  {
+    id: 'vid-ko-3',
+    authorId: 'user-9',
+    authorName: '韩剧迷俱乐部',
+    authorAvatar: '📺',
+    language: 'ko',
+    title: '韩剧韩语学习 - 鱿鱼游戏台词精讲',
+    description: '解析热门韩剧经典台词，学习地道韩语表达和日常对话。',
+    videoUrl: 'https://www.youtube.com/watch?v=oIFd9GsXhZ4',
+    thumbnailUrl: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=640&h=360&fit=crop',
+    stars: 1950,
+    views: 167000,
+    duration: '42:10',
+    createdAt: '2026-04-10',
+    tags: ['韩语', '韩剧', '对话']
+  }
+];
+
+export function getVideosByLanguage(language: 'en' | 'ja' | 'ko') {
+  return videoResources.filter(v => v.language === language);
+}
+
+export function getAllVideos() {
+  return videoResources;
+}

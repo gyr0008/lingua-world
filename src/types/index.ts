@@ -101,6 +101,24 @@ export interface CommunityPost {
   tags: string[];
 }
 
+export interface VideoResource {
+  id: string;
+  authorId: string;
+  authorName: string;
+  authorAvatar: string;
+  language: Language;
+  title: string;
+  description: string;
+  videoUrl: string;
+  thumbnailUrl: string;
+  stars: number;
+  views: number;
+  duration: string;
+  createdAt: string;
+  tags: string[];
+  isStarred?: boolean;
+}
+
 export interface DailyActivity {
   date: string;
   xp: number;
